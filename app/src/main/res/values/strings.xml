@@ -1,3 +1,23 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">View &amp; Resources</string>
+    <string name="contact_placeholder_name">Text placeholder</string>
+    <string name="contact_back">Contact - back</string>
+    <string name="contact_options">Contact - options</string>
+    <string name="contact_attach_file">contact - attach file</string>
+    <string name="contact_hint_name">Name</string>
+    <string name="contact_hint_phone">Phone</string>
+    <string name="contact_hint_phone_type">Select</string>
+    <string name="contact_hint_save">Save</string>
+    <string name="contact_hint_address">Address</string>
+    <string name="contact_hint_city">City</string>
+    <string name="contact_hint_country">Country</string>
+    <string name="contact_hint_birthday">Date</string>
+    <string name="contact_hint_notes">Notes</string>
+    <string name="contact_placeholder_phone" tools:ignore="TypographyDashes">+1(234)567-8900</string>
+    <string name="contact_placeholder_phone_type">Mobile</string>
+    <string name="contact_placeholder_address">123, Lenin Street, Apt. 6</string>
+    <string name="contact_placeholder_city">Tokyo</string>
+    <string name="contact_placeholder_country">Australia</string>
+    <string name="contact_placeholder_date">Birthday</string>
+    <string name="contact_placeholder_notes">Loves burgers and french fries</string>
 </resources>

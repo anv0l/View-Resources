@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HeaderTextView">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">@dimen/padding_header_text</item>
+        <item name="android:textSize">@dimen/header_font_size</item>
+    </style>
+
+    <style name="Widget.Material3.TextInputLayout.FilledBox.Padding">
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu.Padding">
+        <item name="android:padding">5dp</item>
+    </style>
+
+</resources>
