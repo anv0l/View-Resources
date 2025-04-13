@@ -7,58 +7,48 @@
     android:fitsSystemWindows="true"
     tools:context=".ContactsActivity">
 
-    <!-- header BEGIN -->
-    <ImageView
-        android:id="@+id/contact_back"
-        style="@style/imageButton.clickable.Border"
-        android:layout_width="wrap_content"
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/contact_app_bar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/contact_back"
-        android:src="@drawable/arrow_back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/contact_display_name"
-        style="@style/HeaderTextView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/contact_placeholder_name"
-        app:layout_constraintBottom_toBottomOf="@id/contact_back"
-        app:layout_constraintEnd_toStartOf="@id/contact_options"
-        app:layout_constraintStart_toEndOf="@id/contact_back"
-        app:layout_constraintTop_toTopOf="@id/contact_back" />
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/contact_attach_file"
-        style="@style/imageButton.clickable.Border"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/contact_options"
-        android:src="@drawable/more_vert"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/contact_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:menu="@menu/contact_toolbar_menu"
+                app:navigationIcon="@drawable/arrow_back"
+                app:title="@string/contact_placeholder_name">
 
-    <ImageView
-        android:id="@+id/contact_options"
-        style="@style/imageButton.clickable.Border"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/contact_attach_file"
-        android:src="@drawable/attach_file"
-        app:layout_constraintEnd_toStartOf="@id/contact_attach_file"
-        app:layout_constraintTop_toTopOf="parent" />
-    <!-- header END -->
+                <androidx.appcompat.widget.ActionMenuView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end">
+
+                </androidx.appcompat.widget.ActionMenuView>
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <ScrollView
         android:id="@+id/scroll"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:paddingTop="@dimen/padding_contact_fields_to_header"
-        app:layout_constraintBottom_toTopOf="@id/contact_save"
+        app:layout_constraintBottom_toTopOf="@id/cart_place_order"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/contact_back">
+        app:layout_constraintTop_toBottomOf="@id/contact_app_bar">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -167,7 +157,6 @@
                     android:text="@string/contact_placeholder_city" />
             </com.google.android.material.textfield.TextInputLayout>
 
-
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/contact_country"
                 style="@style/Widget.Material3.TextInputLayout.FilledBox.Padding"
@@ -234,15 +223,14 @@
     </ScrollView>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/contact_save"
+        android:id="@+id/cart_place_order"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/padding_header_text"
-
+        style="@style/Widget.Material3.Button.Main"
+        android:layout_margin="5dp"
         android:text="@string/contact_hint_save"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="1" />
+        app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

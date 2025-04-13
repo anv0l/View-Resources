@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="HeaderTextView">
         <item name="android:ellipsize">end</item>
         <item name="android:maxLines">1</item>
@@ -9,10 +10,45 @@
 
     <style name="Widget.Material3.TextInputLayout.FilledBox.Padding">
         <item name="android:padding">5dp</item>
+        <item name="boxBackgroundColor">?attr/surfaceContainerHighest</item>
     </style>
 
     <style name="Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu.Padding">
         <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="Widget.AppCompat.TextView.Scrollable">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:freezesText">true</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+
+    <style name="Widget.Material3.Button.Main">
+        <item name="backgroundTint">?attr/colorSysPrimary</item>
+        <item name="android:textColor">?attr/sysOnPrimary</item>
+    </style>
+
+    <style name="MaterialAlertDialog.Material3.Login">
+        <item name="android:background">?attr/surfaceContainerHigh</item>
+    </style>
+
+    <style name="Widget.Material3.Button.Sighin">
+        <item name="backgroundTint">?attr/surfaceContainerHigh</item>
+        <item name="strokeColor">?attr/outline</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="Widget.Material3.Button.Sighin.Login">
+        <item name="android:textColor">?attr/colorSysPrimary</item>
+    </style>
+
+    <style name="Widget.Material3.Button.Sighin.Cancel">
+        <item name="android:textColor">?attr/secondary</item>
     </style>
 
 </resources>

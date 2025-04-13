@@ -1,6 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/signin_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_header_text"
+        android:text="@string/login_header"
+        android:textAlignment="center"
+        android:textSize="@dimen/header_font_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signin_login"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/login_hint_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signin_header">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/login_placeholder_login" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signin_password"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/signin_hint_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signin_login"
+        app:passwordToggleDrawable="@drawable/light_mode"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="monospace"
+            android:inputType="textPassword"
+            android:text="@string/signin_placeholder_password" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/signin_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_margin_buttons_top"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/login_reset_password"
+        android:textColor="?attr/colorSysPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signin_password" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_signin_cancel"
+        style="@style/Widget.Material3.Button.Sighin.Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_margin_buttons_top"
+        android:text="@string/signin_button_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signin_reset" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_signin_login"
+        style="@style/Widget.Material3.Button.Sighin.Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_margin_buttons_top"
+        android:layout_marginEnd="@dimen/login_margin_buttons_end"
+        android:text="@string/signin_button_login"
+        app:layout_constraintEnd_toStartOf="@id/btn_signin_cancel"
+        app:layout_constraintTop_toBottomOf="@id/signin_reset" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

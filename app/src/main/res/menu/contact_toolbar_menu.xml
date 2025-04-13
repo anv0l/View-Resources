@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/contact_attach_file"
+        android:icon="@drawable/attach_file"
+        android:title="@string/contact_attach_file"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/contact_options"
+        android:icon="@drawable/more_vert"
+        android:title="@string/contact_options"
+        app:showAsAction="always" />
+</menu>

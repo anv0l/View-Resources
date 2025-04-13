@@ -5,4 +5,9 @@
     <dimen name="padding_contact_fields">5dp</dimen>
     <dimen name="header_font_size">25sp</dimen>
     <dimen name="margin_header_text">5dp</dimen>
+    <dimen name="login_margin_buttons_top">15dp</dimen>
+    <dimen name="login_margin_buttons_end">12dp</dimen>
+    <dimen name="cart_item_padding">10dp</dimen>
+    <dimen name="cart_item_name_size">28sp</dimen>
+    <dimen name="cart_order_total_size">25sp</dimen>
 </resources>

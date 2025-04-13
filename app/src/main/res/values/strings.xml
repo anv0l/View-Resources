@@ -20,4 +20,33 @@
     <string name="contact_placeholder_country">Australia</string>
     <string name="contact_placeholder_date">Birthday</string>
     <string name="contact_placeholder_notes">Loves burgers and french fries</string>
+    <string name="cart_cancel">Отмена</string>
+    <string name="cart_title">Cart</string>
+    <string name="cart_placeholder_items_count">4 items in your cart</string>
+    <string name="login_header">Login</string>
+    <string name="login_hint_login">Login</string>
+    <string name="login_placeholder_login">ivanpetrov</string>
+    <string name="login_reset_password"><u>Reset my password</u></string>
+    <string name="signin_button_cancel">Cancel</string>
+    <string name="cart_item_desc_image">Item image</string>
+    <string name="cart_item_placeholder_item_name">List Item 1</string>
+    <string name="cart_item_placeholder_category">Category</string>
+    <string name="cart_item_placeholder_extra">Supporting text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="cart_item_placeholder_price">$35</string>
+    <string name="signin_hint_password">Password</string>
+    <string name="signin_placeholder_password">password322</string>
+    <string name="signin_button_login">Login</string>
+    <string name="cart_order_total">Order Total:</string>
+    <string name="cart_oder_total_value">175.50</string>
+    <string name="cart_subtotal">Subtotal:</string>
+    <string name="cart_subtotal_value">$140</string>
+    <string name="cart_shipping">Shipping:</string>
+    <string name="cart_shipping_value">$25</string>
+    <string name="cart_tax">Tax:</string>
+    <string name="cart_tax_value">$10.50</string>
+
+    <plurals name="cart_items_count">
+        <item quantity="one">%1$d item in your cart</item>
+        <item quantity="other">%1$d items in your cart</item>
+    </plurals>
 </resources>

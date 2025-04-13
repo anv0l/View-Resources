@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorSysPrimary" format="color"/>
+    <attr name="surfaceContainerHigh" format="color"/>
+    <attr name="surfaceContainerHighest" format="color"/>
+    <attr name="outline" format="color"/>
+    <attr name="secondary" format="color"/>
+    <attr name="sysOnPrimary" format="color"/>
+</resources>

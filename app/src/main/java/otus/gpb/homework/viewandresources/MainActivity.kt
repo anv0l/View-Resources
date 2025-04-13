@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.signin_button).setOnClickListener {
-            MaterialAlertDialogBuilder(this)
+            MaterialAlertDialogBuilder(this, R.style.MaterialAlertDialog_Material3_Login)
                 .setView(R.layout.dialog_signin)
                 .show()
         }

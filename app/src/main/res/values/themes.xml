@@ -3,7 +3,14 @@
     <style name="Base.Theme.ViewResources" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorSysPrimary">@color/primary_light</item>
+        <item name="surfaceContainerHigh">@color/surface_container_high_light</item>
+        <item name="surfaceContainerHighest">@color/surface_container_highest_light</item>
+        <item name="outline">@color/outline_light</item>
+        <item name="secondary">@color/secondary_light</item>
+        <item name="sysOnPrimary">@color/on_primary_light</item>
     </style>
+
 
     <style name="Theme.ViewResources" parent="Base.Theme.ViewResources" />
 </resources>
