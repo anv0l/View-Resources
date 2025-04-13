@@ -37,13 +37,14 @@
     <string name="signin_placeholder_password">password322</string>
     <string name="signin_button_login">Login</string>
     <string name="cart_order_total">Order Total:</string>
-    <string name="cart_oder_total_value">175.50</string>
+    <string name="cart_order_total_value">175.50</string>
     <string name="cart_subtotal">Subtotal:</string>
     <string name="cart_subtotal_value">$140</string>
     <string name="cart_shipping">Shipping:</string>
     <string name="cart_shipping_value">$25</string>
     <string name="cart_tax">Tax:</string>
     <string name="cart_tax_value">$10.50</string>
+    <string name="cart_place_order">Place order</string>
 
     <plurals name="cart_items_count">
         <item quantity="one">%1$d item in your cart</item>
